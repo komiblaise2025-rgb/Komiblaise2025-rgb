@@ -3,276 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="qntZ7VE1mxT6OzqNoxDEtp1hX3j-KO5gJ06pjYCk93o" />
-    <title>Santé Universelle | Votre guide pour le bien-être et la médecine de demain</title>
-    <meta name="description" content="Découvrez Santé Universelle : actualités, innovations médicales et conseils pratiques pour prendre soin de votre bien-être au quotidien.">
-    <meta name="6a97888e-site-verification" content="d72ce5093a85d099e3b32d1df6fbb63c">
-    <!-- Préchargement et optimisation des styles -->
-    <style>
-        /* Variables de design pour une maintenance facile */
-        :root {
-            --primary-color: #0284c7;
-            --secondary-color: #0f172a;
-            --text-color: #334155;
-            --bg-light: #f8fafc;
-            --white: #ffffff;
-        }
+    <title>Gagner de l'argent - Application AdMob</title>
+    
+    <!-- Meta Data avec vos Identifiants AdMob -->
+    <meta name="admob-app-id" content="ca-app-pub-6294924802652621~6409024468">
+    <meta name="admob-ad-unit-id" content="ca-app-pub-6294924802652621/5271348409">
 
-        /* Réinitialisation de base */
+    <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-light);
-        }
-
-        /* En-tête / Navigation */
-        header {
-            background-color: var(--white);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
+            background-color: #f4f7fe;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            min-height: 100vh;
             padding: 20px;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Section Principale (Hero) */
-        .hero {
-            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-            padding: 80px 20px;
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 420px;
+            padding: 24px;
             text-align: center;
         }
 
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
+        h1 {
+            color: #1a202c;
+            font-size: 1.4rem;
+            margin-bottom: 6px;
         }
 
-        .hero h1 {
-            font-size: 2.8rem;
-            color: var(--secondary-color);
+        p.subtitle {
+            color: #718096;
+            font-size: 0.85rem;
             margin-bottom: 20px;
-            line-height: 1.2;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #475569;
+        .balance-box {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: #ffffff;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .balance-box span {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        .balance-box h2 {
+            font-size: 2rem;
+            margin-top: 4px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
         }
 
         .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 6px;
+            background-color: #4f46e5;
+            color: #ffffff;
+            border: none;
+            flex: 1;
+            padding: 12px;
+            font-size: 0.95rem;
             font-weight: 600;
-            transition: background-color 0.3s;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn-withdraw {
+            background-color: #10b981;
+        }
+
+        .btn-withdraw:hover {
+            background-color: #059669;
         }
 
         .btn:hover {
-            background-color: #0369a1;
+            opacity: 0.95;
         }
 
-        /* Section Contenu (Grille d'articles ou innovations) */
-        .main-content {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 20px;
+        .btn:active {
+            transform: scale(0.98);
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--secondary-color);
-            margin-bottom: 40px;
+        .btn:disabled {
+            background-color: #cbd5e1;
+            cursor: not-allowed;
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background-color: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            border: 1px solid #e2e8f0;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: var(--secondary-color);
+        .status {
             margin-bottom: 15px;
-            font-size: 1.3rem;
+            font-size: 0.85rem;
+            color: #4a5568;
+            min-height: 20px;
         }
 
-        /* Pied de page */
-        footer {
-            background-color: var(--secondary-color);
-            color: #94a3b8;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 80px;
+        /* Forms & Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
         }
 
-        footer p {
+        .modal-content {
+            background-color: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 380px;
+            text-align: left;
+        }
+
+        .modal-content h3 {
+            margin-bottom: 12px;
+            color: #1a202c;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            color: #4a5568;
+            margin-bottom: 4px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
             font-size: 0.9rem;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .nav-container { flex-direction: column; gap: 15px; }
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
         }
-        .btn, .btn-read {
-    background-color: #000000; /* Bouton noir */
-    color: #ffffff;            /* Texte blanc */
-}
+
+        .btn-cancel {
+            background-color: #64748b;
+        }
+
+        .history-box {
+            text-align: left;
+            margin-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
+        }
+
+        .history-box h4 {
+            font-size: 0.9rem;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+
+        .history-list {
+            list-style: none;
+            max-height: 100px;
+            overflow-y: auto;
+            font-size: 0.8rem;
+        }
+
+        .history-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dashed #f1f5f9;
+            color: #64748b;
+        }
+
+        /* Modal Vidéo */
+        .video-box {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: #1e293b;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            color: #94a3b8;
+        }
     </style>
-    
 </head>
 <body>
 
-    <!-- En-tête de navigation -->
-    <header>
-         <nav class="nav-container">
-            <a href="index.html" class="logo">Santé Universelle</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="technologies.html">Technologies</a></li>
-                <li><a href="conseils.html">Conseils</a></li>
-                <li><a href="apropos.html">À propos</a></li>
+    <div class="card">
+        <h1>Application Récompense</h1>
+        <p class="subtitle">Regardez des annonces et retirez vos gains</p>
+
+        <div class="balance-box">
+            <span>Votre Solde</span>
+            <h2 id="balance">0 FCFA</h2>
+        </div>
+
+        <div class="actions">
+            <button id="adBtn" class="btn" onclick="startAdProcess()">Regarder vidéo</button>
+            <button class="btn btn-withdraw" onclick="openWithdrawModal()">Retirer</button>
+        </div>
+
+        <div id="statusText" class="status">Regardez des vidéos pour augmenter votre solde.</div>
+
+        <div class="history-box">
+            <h4>Dernières demandes de retrait</h4>
+            <ul id="historyList" class="history-list">
+                <li class="history-item"><span>Aucun retrait effectué</span></li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Section d'accueil principale -->
-    <section id="accueil" class="hero">
-        <div class="hero-content">
-            <h1>L'innovation technologique au service de la santé globale</h1>
-            <p>Explorez les dernières avancées médicales, les outils connectés et les solutions d'accès universel aux soins pour améliorer votre bien-être au quotidien.</p>
-            <a href="#innovations" class="btn">Découvrir nos articles</a>
         </div>
-    </section>
+    </div>
 
-    <!-- Section des fonctionnalités / articles récents -->
-    <main id="innovations" class="main-content">
-        <h2 class="section-title">Dernières Innovations & Actualités</h2>
-        
-        <div class="features-grid">
-            <!-- Carte 1 -->
-            <article class="card">
-                <h3>Santé Connectée & IoT</h3>
-                <p>Comment les objets connectés et les capteurs intelligents transforment le suivi médical à distance et permettent une prévention personnalisée et en temps réel.</p>
-            </article>
-
-            <!-- Carte 2 -->
-            <article class="card">
-                <h3>Intelligence Artificielle</h3>
-                <p>L'intégration des algorithmes prédictifs dans les diagnostics médicaux modernes pour optimiser la précision, la rapidité et l'efficacité des traitements.</p>
-            </article>
-
-            <!-- Carte 3 -->
-            <article class="card">
-                <h3>Accès Universel aux Soins</h3>
-                <p>Analyse des plateformes numériques et des solutions open-source qui brisent les barrières géographiques pour apporter la médecine là où elle est nécessaire.</p>
-            </article>
-           
-        <article class="article-card">
-             <img src="image-article1.webp" alt="Bannière prévention cancer" style="width: 100%; max-width: 590px; height: auto; border-radius: 8px;" width="590" height="310">
-            <span class="article-tag">Prévention & Science</span>
-            <h2>Comment prévenir le cancer : Le guide complet basé sur la science</h2>
-            <p>Selon l’Organisation Mondiale de la Santé (OMS), entre 30 % et 50 % des cas de cancers pourraient être évités en modifiant nos habitudes de vie et en éliminant les facteurs de risque majeurs. Découvrez dans ce guide complet basé sur les dernières données de la médecine moderne comment optimiser votre alimentation, reprogrammer vos cellules par l'activité physique et utiliser les outils de dépistage précoce...</p>
-            <a href="article1.html" class="btn-read">Lire l'article complet</a>
-        </article> 
-            <article class="article-card">
-            <img src="image-article2.jpg" alt="Innovations médicales et traitements" style="width: 100%; max-width: 590px; height: auto; border-radius: 8px;" width="590" height="310">
-            <span class="article-tag">Traitements & Innovations</span>
-            <h2>Comment traiter le cancer : Le guide complet des traitements et innovations médicales</h2>
-            <p>Face au diagnostic du cancer, la médecine moderne personnalise désormais les parcours de soins. Découvrez notre analyse encyclopédique complète sur le fonctionnement de la chimiothérapie adjuvante, la chirurgie oncologique, les thérapies ciblées de précision et l'essor fantastique de l'immunothérapie...</p>
-            <a href="article2.html" class="btn-read">Lire l'article complet</a>
-        </article>
+    <!-- Modal Vidéo Publicitaire -->
+    <div id="adModal" class="modal-overlay">
+        <div class="modal-content video-box">
+            <h3>Publicité Récompensée</h3>
+            <div class="video-placeholder">[ Annonce Vidéo en cours ]</div>
+            <p id="timerText" style="color: #f59e0b; margin-bottom: 12px;">Patientez 10 secondes...</p>
+            <button id="closeAdBtn" class="btn" style="display: none;" onclick="claimReward()">Réclamer la récompense (+50 FCFA)</button>
         </div>
-    </main>
+    </div>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2026 Santé Universelle. Tous droits réservés.</p>
-    </footer>
-<script>
-function loadGA() {
-  if (window.gaLoaded) return;
-  window.gaLoaded = true;
+    <!-- Modal Formulaire de Retrait -->
+    <div id="withdrawModal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Demande de Retrait</h3>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 12px;">Seuil minimum de retrait : 1000 FCFA</p>
+            
+            <div class="form-group">
+                <label for="method">Moyen de retrait</label>
+                <select id="method">
+                    <option value="Flooz / T-Money">Mobile Money (Flooz / T-Money)</option>
+                    <option value="Virement Bancaire">Virement Bancaire</option>
+                    <option value="Wave">Wave</option>
+                </select>
+            </div>
 
-  // Création dynamique de la balise script
-  var script = document.createElement('script');
-  script.async = true;
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RG91HFR0LD';
-  document.head.appendChild(script);
+            <div class="form-group">
+                <label for="account">Numéro de téléphone ou IBAN</label>
+                <input type="text" id="account" placeholder="Ex: +228 90000000">
+            </div>
 
-  // Initialisation de gtag
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RG91HFR0LD', { 'transport_type': 'beacon' });
-}
+            <div class="form-group">
+                <label for="amount">Montant à retirer (FCFA)</label>
+                <input type="number" id="amount" placeholder="Ex: 1000">
+            </div>
 
-// Déclencheurs d'interaction humaine
-window.addEventListener('scroll', loadGA, { passive: true });
-window.addEventListener('pointerdown', loadGA, { passive: true });
-window.addEventListener('touchstart', loadGA, { passive: true });
-</script>
-  <script type="text/javascript">
-var infolinks_pid = 3445764;
-var infolinks_wsid = 0;
-</script>
-<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+            <div class="modal-buttons">
+                <button class="btn btn-cancel" onclick="closeWithdrawModal()">Annuler</button>
+                <button class="btn btn-withdraw" onclick="processWithdrawal()">Valider le retrait</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let userBalance = 0;
+        const rewardAmount = 50; // Gain par vidéo
+        const minWithdrawal = 1000; // Seuil minimum
+        let countdown = 10;
+        let timerInterval;
+
+        // --- Gestion de la publicité ---
+        function startAdProcess() {
+            const adModal = document.getElementById("adModal");
+            const timerText = document.getElementById("timerText");
+            const closeAdBtn = document.getElementById("closeAdBtn");
+
+            adModal.style.display = "flex";
+            closeAdBtn.style.display = "none";
+            countdown = 10;
+            timerText.innerText = `Patientez ${countdown} secondes...`;
+
+            timerInterval = setInterval(() => {
+                countdown--;
+                if (countdown > 0) {
+                    timerText.innerText = `Patientez ${countdown} secondes...`;
+                } else {
+                    clearInterval(timerInterval);
+                    timerText.innerText = "Vidéo terminée !";
+                    closeAdBtn.style.display = "block";
+                }
+            }, 1000);
+        }
+
+        function claimReward() {
+            document.getElementById("adModal").style.display = "none";
+            userBalance += rewardAmount;
+            document.getElementById("balance").innerText = userBalance + " FCFA";
+            document.getElementById("statusText").innerText = "Félicitations ! +50 FCFA ajoutés.";
+        }
+
+        // --- Gestion du retrait ---
+        function openWithdrawModal() {
+            document.getElementById("withdrawModal").style.display = "flex";
+        }
+
+        function closeWithdrawModal() {
+            document.getElementById("withdrawModal").style.display = "none";
+        }
+
+        function processWithdrawal() {
+            const method = document.getElementById("method").value;
+            const account = document.getElementById("account").value.trim();
+            const amount = parseFloat(document.getElementById("amount").value);
+            const statusText = document.getElementById("statusText");
+
+            if (!account) {
+                alert("Veuillez saisir votre numéro ou compte de paiement.");
+                return;
+            }
+
+            if (isNaN(amount) || amount < minWithdrawal) {
+                alert(`Le montant minimum de retrait est de ${minWithdrawal} FCFA.`);
+                return;
+            }
+
+            if (amount > userBalance) {
+                alert("Solde insuffisant pour effectuer ce retrait.");
+                return;
+            }
+
+            // Déduction du solde
+            userBalance -= amount;
+            document.getElementById("balance").innerText = userBalance + " FCFA";
+
+            // Ajout à l'historique
+            addHistoryItem(amount, method);
+
+            closeWithdrawModal();
+            statusText.innerText = `Demande de ${amount} FCFA via ${method} envoyée avec succès !`;
+
+            // Réinitialiser le formulaire
+            document.getElementById("account").value = "";
+            document.getElementById("amount").value = "";
+        }
+
+        function addHistoryItem(amount, method) {
+            const historyList = document.getElementById("historyList");
+            if (historyList.children[0]?.innerText === "Aucun retrait effectué") {
+                historyList.innerHTML = "";
+            }
+
+            const li = document.createElement("li");
+            li.className = "history-item";
+            li.innerHTML = `<span>${amount} FCFA (${method})</span><b style="color:#eab308;">En cours</b>`;
+            historyList.prepend(li);
+        }
+    </script>
 </body>
 </html>
