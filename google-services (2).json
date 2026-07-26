@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "797004337170",
+    "project_id": "pubgain-e6fa6",
+    "storage_bucket": "pubgain-e6fa6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797004337170:android:acfd3bc99c8fb7bbebc8cb",
+        "android_client_info": {
+          "package_name": "Technologies.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9W6c8FY_dGpxW7C8rSeQplIXUI-MTT78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797004337170:android:eedda89256a17246ebc8cb",
+        "android_client_info": {
+          "package_name": "technologies53.wordpress.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9W6c8FY_dGpxW7C8rSeQplIXUI-MTT78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
